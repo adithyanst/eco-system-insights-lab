@@ -1,12 +1,28 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import HeroSection from "@/components/HeroSection";
+import ProblemFraming from "@/components/ProblemFraming";
+import CausalLoopDiagram from "@/components/CausalLoopDiagram";
+import SystemDynamics from "@/components/SystemDynamics";
+import EPSAnalysis from "@/components/EPSAnalysis";
+import InsightsInterventions from "@/components/InsightsInterventions";
+import LeveragePoints from "@/components/LeveragePoints";
+import SystemArchetypes from "@/components/SystemArchetypes";
+import GraphsSection from "@/components/GraphsSection";
+import SubmissionContact from "@/components/SubmissionContact";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <HeroSection />
+      <ProblemFraming />
+      <CausalLoopDiagram />
+      <SystemDynamics />
+      <EPSAnalysis />
+      <InsightsInterventions />
+      <LeveragePoints />
+      <SystemArchetypes />
+      <GraphsSection />
+      <SubmissionContact />
     </div>
   );
 };
