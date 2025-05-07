@@ -27,10 +27,10 @@ const SystemDynamics = () => {
 								<div className="flex flex-col lg:flex-row gap-6">
 									<div className="flex-1">
 										<div className="bg-white rounded-md border border-mint-100 p-4 h-[400px] flex items-center justify-center">
-											<img
-												src="https://i.imgur.com/8LXkhMT.png"
-												alt="Stock and Flow Diagram"
-												className="max-w-full max-h-full object-contain"
+											<iframe
+												src="/sfd.pdf"
+												className="w-full h-[400px] rounded-md"
+												title="Causal Loop Diagram PDF"
 											/>
 										</div>
 									</div>
