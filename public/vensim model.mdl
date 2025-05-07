@@ -1,0 +1,250 @@
+{UTF-8}
+"Virtual Try-On Tools"  = A FUNCTION OF( )
+	~	
+	~		|
+
+Customer Education on Returns  = A FUNCTION OF( )
+	~	
+	~		|
+
+Customer Expectations Gap  = A FUNCTION OF( Collaborative Filtering Bias,Data Quality for Niche Products\
+		,Quality of Product Listing)
+	~	
+	~		|
+
+Return Policy Strictness  = A FUNCTION OF( Return Fraud)
+	~	
+	~		|
+
+Impulse Purchases  = A FUNCTION OF( "Frequent Discounts / Flash Sales",Inventory Reshelving Time\
+		)
+	~	
+	~		|
+
+Product Personalization Accuracy  = A FUNCTION OF( "Virtual Try-On Tools")
+	~	
+	~		|
+
+Logistics Cost  = A FUNCTION OF( Disposal Cost,Packaging Waste)
+	~	
+	~		|
+
+Seller Exit Rate  = A FUNCTION OF( Product Personalization Accuracy)
+	~	
+	~		|
+
+Return Fraud  = A FUNCTION OF( Customer Education on Returns)
+	~	
+	~		|
+
+Packaging Waste  = A FUNCTION OF( Returns)
+	~	
+	~		|
+
+Inventory Reshelving Time  = A FUNCTION OF( Returns)
+	~	
+	~		|
+
+Sales  = A FUNCTION OF( Customer Trust and Loyalty,Seller Exit Rate)
+	~	
+	~		|
+
+Returns  = A FUNCTION OF( Customer Education on Returns,Customer Expectations Gap,Impulse Purchases\
+		,Return Policy Strictness,"Virtual Try-On Tools")
+	~	
+	~		|
+
+Collaborative Filtering Bias  = A FUNCTION OF( More Purchases)
+	~	
+	~		|
+
+More Purchases  = A FUNCTION OF( Popularity of Product)
+	~	
+	~		|
+
+Data Quality for Niche Products  = A FUNCTION OF( Returns)
+	~	
+	~		|
+
+Popularity of Product  = A FUNCTION OF( Data Quality for Niche Products)
+	~	
+	~		|
+
+Customer Trust and Loyalty  = A FUNCTION OF( Damage to Brand Image)
+	~	
+	~		|
+
+Damage to Brand Image  = A FUNCTION OF( Environmental Impact)
+	~	
+	~		|
+
+Data on Return Reasons  = A FUNCTION OF( Returns)
+	~	
+	~		|
+
+Disposal Cost  = A FUNCTION OF( "Non-Refurbishable Inventory / Waste")
+	~	
+	~		|
+
+Environmental Impact  = A FUNCTION OF( "Non-Refurbishable Inventory / Waste")
+	~	
+	~		|
+
+"Frequent Discounts / Flash Sales"  = A FUNCTION OF( Pressure for More Sales)
+	~	
+	~		|
+
+"Non-Refurbishable Inventory / Waste"  = A FUNCTION OF( Returns)
+	~	
+	~		|
+
+Pressure for More Sales  = A FUNCTION OF( Profit Margins)
+	~	
+	~		|
+
+Profit Margins  = A FUNCTION OF( Logistics Cost,Sales)
+	~	
+	~		|
+
+Quality of Product Listing  = A FUNCTION OF( Data on Return Reasons)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,38,2
+10,1,Returns,2838,1066,35,12,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Data on Return Reasons,3142,1044,63,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,Quality of Product Listing,3121,1294,65,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,Customer Expectations Gap,2848,1261,82,24,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,5,1,2,1,0,83,0,0,192,0,-1--1--1,,1|(2980,985)|
+1,6,2,3,1,0,83,0,0,192,0,-1--1--1,,1|(3186,1202)|
+1,7,3,4,1,0,79,0,0,192,0,-1--1--1,,1|(2961,1325)|
+1,8,4,1,1,0,83,0,0,192,0,-1--1--1,,1|(2812,1144)|
+12,9,0,3005,1162,41,41,4,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+10,10,"Frequent Discounts / Flash Sales",2985,795,66,21,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,11,Impulse Purchases,2955,947,50,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,12,Logistics Cost,2510,805,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,13,Profit Margins,2619,671,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,14,Pressure for More Sales,2859,666,62,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,15,10,11,1,0,83,0,0,192,0,-1--1--1,,1|(2999,867)|
+1,16,11,1,1,0,83,0,0,192,0,-1--1--1,,1|(2899,1027)|
+1,17,12,13,1,0,79,0,0,192,0,-1--1--1,,1|(2548,724)|
+1,18,13,14,1,0,79,0,0,192,0,-1--1--1,,1|(2745,624)|
+1,19,14,10,1,0,83,0,0,192,0,-1--1--1,,1|(2922,689)|
+12,20,0,2724,833,45,45,4,7,0,0,-1,1,0,0,0,0,0,0,0,0
+R
+10,21,"Non-Refurbishable Inventory / Waste",2646,1046,50,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,22,Disposal Cost,2530,937,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,23,21,22,1,0,83,0,0,192,0,-1--1--1,,1|(2570,1001)|
+1,24,22,12,1,0,83,0,0,192,0,-1--1--1,,1|(2512,865)|
+1,25,1,21,1,0,83,0,0,192,0,-1--1--1,,1|(2764,1072)|
+10,26,Environmental Impact,2355,1131,55,42,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,27,Damage to Brand Image,2125,923,63,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,28,Customer Trust and Loyalty,2169,726,53,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,29,21,26,1,0,83,0,0,192,0,-1--1--1,,1|(2539,1101)|
+1,30,26,27,1,0,83,0,0,192,0,-1--1--1,,1|(2160,1023)|
+1,31,27,28,1,0,79,0,0,192,0,-1--1--1,,1|(2120,819)|
+10,32,Sales,2383,587,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,33,28,32,1,0,83,0,0,192,0,-1--1--1,,1|(2235,646)|
+1,34,32,13,1,0,83,0,0,192,0,-1--1--1,,1|(2521,611)|
+12,35,0,2342,820,44,44,4,7,0,0,-1,1,0,0,0,0,0,0,0,0
+R
+10,36,Popularity of Product,2753,1568,56,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,37,More Purchases,2538,1459,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,38,Collaborative Filtering Bias,2620,1253,57,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,39,Data Quality for Niche Products,2935,1370,58,26,8,3,0,0,-1,1,0,0,0,0,0,0,0,0
+1,40,36,37,1,0,83,0,0,192,0,-1--1--1,,1|(2617,1540)|
+1,41,37,38,1,0,83,0,0,192,0,-1--1--1,,1|(2536,1345)|
+1,42,38,4,1,0,83,0,0,192,0,-1--1--1,,1|(2708,1221)|
+1,43,1,39,1,0,83,0,0,192,0,-1--1--1,,1|(3420,1119)|
+1,44,39,36,1,0,83,0,0,192,0,-1--1--1,,1|(2903,1516)|
+1,45,39,4,1,0,79,0,0,192,0,-1--1--1,,1|(2853,1326)|
+12,46,0,2767,1435,44,44,4,7,0,0,-1,1,0,0,0,0,0,0,0,0
+R
+10,47,"Virtual Try-On Tools",2095,1187,53,26,8,3,0,0,-1,1,0,0,0,0,0,0,0,0
+10,48,Return Fraud,1702,893,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,49,Return Policy Strictness,2210,1586,61,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,50,Packaging Waste,1931,990,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,51,Inventory Reshelving Time,2744,1751,55,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,52,Seller Exit Rate,2771,1898,46,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,53,Product Personalization Accuracy,2163,1676,62,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,54,Customer Education on Returns,1896,543,61,26,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,55,47,1,1,0,79,0,0,192,0,-1--1--1,,1|(2422,931)|
+1,56,47,53,1,0,83,0,0,192,0,-1--1--1,,1|(2060,1418)|
+1,57,53,52,1,0,79,0,0,192,0,-1--1--1,,1|(2365,1821)|
+1,58,52,32,1,0,79,0,0,192,0,-1--1--1,,1|(3476,1423)|
+1,59,1,50,1,0,83,0,0,192,0,-1--1--1,,1|(2254,1416)|
+1,60,50,12,1,0,83,0,0,192,0,-1--1--1,,1|(2200,618)|
+1,61,1,51,1,0,83,0,0,192,0,-1--1--1,,1|(2415,1361)|
+1,62,51,11,1,0,79,0,0,192,0,-1--1--1,,1|(3229,1393)|
+1,63,54,48,1,0,79,0,0,192,0,-1--1--1,,1|(1763,698)|
+1,64,48,49,1,0,83,0,0,192,0,-1--1--1,,1|(1782,1288)|
+1,65,49,1,1,0,79,0,0,192,0,-1--1--1,,1|(2753,1300)|
+1,66,54,1,1,0,79,0,0,192,0,-1--1--1,,1|(2619,527)|
+12,67,0,2967,1616,55,55,5,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+12,68,0,2269,1239,48,48,4,7,0,0,-1,1,0,0,0,0,0,0,0,0
+R
+12,69,0,3318,1140,46,46,4,7,0,0,-1,1,0,0,0,0,0,0,0,0
+B
+///---\\\
+:L<%^E!@
+5:Seller Exit Rate
+19:38,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Vensim Sans|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
